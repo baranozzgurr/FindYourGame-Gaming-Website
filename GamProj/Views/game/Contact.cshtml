@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @section Scripts
+{
+
+    }
+    <link href="@Url.Content("~/Content/style.css") rel="stylesheet" type="text/css" />
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>FindYourGame</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="FindYourGame">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/89/ed/5f/89ed5f5193647c81f54c0007d856d97d.jpg">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/Content/plugins/bootstrap/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="~/Content/plugins/fontawesome/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="~/Content/plugins/animate-css/animate.css">
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href="~/Content/plugins/slick/slick.css">
+    <link rel="stylesheet" href="~/Content/plugins/slick/slick-theme.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="~/Content/plugins/colorbox/colorbox.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="~/Content/style.css">
+
+
+</head>
+<body>
+    <div class="body-inner">
+
+        <div id="top-bar" class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <ul class="top-info text-center text-md-left">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> <p class="info-text">3400 Istanbul</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ Top info end -->
+
+                    <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a title="Facebook" href="https://facebook.com">
+                                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                                </a>
+                                <a title="Twitter" href="https://twitter.com">
+                                    <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                                </a>
+                                <a title="Instagram" href="https://instagram.com">
+                                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ Top social end -->
+                </div>
+                <!--/ Content row end -->
+            </div>
+            <!--/ Container end -->
+        </div>
+        <!--/ Topbar end -->
+        <!-- Header start -->
+        <header id="header" class="header-one">
+            <div class="bg-white">
+                <div class="container">
+                    <div class="logo-area">
+                        <div class="row align-items-center">
+                            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb"lg-0">
+                                <a class="d-block" href="@Url.Action("Index","Game")">
+                                    <img loading="lazy" src="https://cdn.dribbble.com/users/1787323/screenshots/12057610/media/8e7e8e869bf389fb727ac393c42e6b27.png?compress=1&resize=400x300" alt="FindYourGame">
+                                </a>
+                            </div><!-- logo end -->
+
+                            <div class="col-lg-9 header-right">
+                                <ul class="top-info-box">
+                                    <li>
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">FindYourGame</p>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">Email Us</p>
+                                                <p class="info-box-subtitle">Contact@FindYourGame.com</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="info-box last">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">Follow Us</p>
+                                                <a title="Instagram" href="https://instagram.com">
+                                                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-get-a-quote">
+                                        <a class="btn btn-primary" href="@Url.Action("Random","Game")">Random Game</a>
+                                    </li>
+                                </ul><!-- Ul end -->
+                            </div><!-- header right end -->
+                        </div><!-- logo area end -->
+
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div>
+
+            <div class="site-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div id="navbar-collapse" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav mr-auto">
+                                        <li class="nav-item dropdown active">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li class="active"><a href="@Url.Action("Action","Game")">Action</a></li>
+                                                <li class="active"><a href="@Url.Action("Fight","Game")">Fight</a></li>
+                                                <li class="active"><a href="@Url.Action("War","Game")">War</a></li>
+                                                
+                                                <li class="active"><a href="@Url.Action("Racing","Game")">Racing</a></li>
+                                                <li class="active"><a href="@Url.Action("Survival","Game")">Survival</a></li>
+                                                <li class="active"><a href="@Url.Action("Platform","Game")">Platform</a></li>
+                                                <li class="active"><a href="@Url.Action("Horror","Game")">Horror</a></li>
+                                                <li class="active"><a href="@Url.Action("Simulation","Game")">Simulation</a></li>
+                                                <li class="active"><a href="@Url.Action("Rpg","Game")">RPG</a></li>
+                                                <li class="active"><a href="@Url.Action("Sports","Game")">Sports</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FindYourGame<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="@Url.Action("About","Game")">About Us</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Search Games</a></li>
+
+                                                <li><a href="#">Comment on Games</a></li>
+                                                <li><a href="#">Buy Games</a></li>
+                                                <li><a href="#">Share Games</a></li>
+
+                                            </ul>
+                                        </li>
+
+
+
+
+
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact","Game")">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--/ Col end -->
+                    </div>
+                    <!--/ Row end -->
+
+                    <div class="nav-search">
+                        <span id="search"><i class="fa fa-search"></i></span>
+                    </div><!-- Search end -->
+
+                    <div class="search-block" style="display: none;">
+                        <label for="search-field" class="w-100 mb-0">
+                            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+                        </label>
+                        <span class="search-close">&times;</span>
+                    </div><!-- Site search end -->
+                </div>
+                <!--/ Container end -->
+
+            </div>
+            <!--/ Navigation end -->
+        </header>
+        <!--/ Header end -->
+        <div id="banner-area" class="banner-area" style="background-image:url(https://www.ubp.com/files/live/sites/ubp/files/image/banner_newsroom/200124_Vignette_Web_Detail.jpg)">
+            <div class="banner-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="banner-heading">
+                                <h1 class="banner-title">Contact</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Company</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div><!-- Col end -->
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div><!-- Banner text end -->
+        </div><!-- Banner area end -->
+
+        <section id="main-container" class="main-container">
+            <div class="container">
+
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2 class="section-title">Reaching our Office</h2>
+                        <h3 class="section-sub-title">Find Our Location</h3>
+                    </div>
+                </div>
+                <!--/ Title row end -->
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ts-service-box-bg text-center h-100">
+                            <span class="ts-service-icon icon-round">
+                                <i class="fas fa-map-marker-alt mr-0"></i>
+                            </span>
+                            <div class="ts-service-box-content">
+                                <h4>Visit Our Office</h4>
+                                <p>3400 Levent,Istanbul </p>
+                            </div>
+                        </div>
+                    </div><!-- Col 1 end -->
+
+                    <div class="col-md-4">
+                        <div class="ts-service-box-bg text-center h-100">
+                            <span class="ts-service-icon icon-round">
+                                <i class="fa fa-envelope mr-0"></i>
+                            </span>
+                            <div class="ts-service-box-content">
+                                <h4>Email Us</h4>
+                                <p>contact@FindYourGame.com</p>
+                            </div>
+                        </div>
+                    </div><!-- Col 2 end -->
+
+                    <div class="col-md-4">
+                        <div class="ts-service-box-bg text-center h-100">
+                            <span class="ts-service-icon icon-round">
+                                <i class="fa fa-phone-square mr-0"></i>
+                            </span>
+                            <div class="ts-service-box-content">
+                                <h4>Call Us</h4>
+                                <p>(+90) 546-111-1111</p>
+                            </div>
+                        </div>
+                    </div><!-- Col 3 end -->
+
+                </div><!-- 1st row end -->
+
+                <div class="gap-60"></div>
+
+                <div class="google-map">
+                    <div id="map" class="map" data-latitude="41.0818" data-longitude="29.0184" data-marker="images/marker.png" data-marker-name="FindYourGame"></div>
+                </div>
+
+                <div class="gap-40"></div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="column-title">We love to hear</h3>
+
+                        <form id="contact-form" action="#" method="post" role="form">
+                            <div class="error-container"></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control form-control-email" name="email" id="email" placeholder="" type="email"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Subject</label>
+                                        <input class="form-control form-control-subject" name="subject" id="subject" placeholder="" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
+                                          required></textarea>
+                            </div>
+                            <div class="text-right">
+                                <br>
+                                <button onclick="location.href='#'" type="button">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div><!-- Content row -->
+            </div><!-- Conatiner end -->
+        </section><!-- Main container end -->
+
+        <div class="col-lg-8">
+            <div class="ts-newsletter row align-items-center">
+                <div class="col-md-5 newsletter-introtext">
+                    <h4 class="text-white mb-0">Newsletter Sign-up</h4>
+                    <p class="text-white">Latest updates and news</p>
+                </div>
+
+                <div class="col-md-7 newsletter-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
+                            <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Please enter your email" autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div><!-- Newsletter end -->
+        </div><!-- Col end -->
+
+    </div><!-- Content row end -->
+    </div>
+    <!--/ Container end -->
+    </section>
+    <!--/ subscribe end -->
+
+
+
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                        <h3 class="widget-title">Find Your Game</h3>
+                        <img loading="lazy" class="footer-logo" src="https://cdn.dribbble.com/users/1787323/screenshots/12057610/media/8e7e8e869bf389fb727ac393c42e6b27.png?compress=1&resize=400x300" alt="FindYourGame">
+
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="https://facebook.com" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div><!-- Col end -->
+
+
+
+
+                </div><!-- Container end -->
+            </div><!-- Footer main end -->
+
+
+    </footer><!-- Footer end -->
+    <!-- Javascript Files
+                                   ================================================== -->
+    <!-- initialize jQuery Library -->
+    <script src="~/Content/plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="~/Content/plugins/bootstrap/bootstrap.min.js" defer></script>
+    <!-- Slick Carousel -->
+    <script src="~/Content/plugins/slick/slick.min.js"></script>
+    <script src="~/Content/plugins/slick/slick-animation.min.js"></script>
+    <!-- Color box -->
+    <script src="~/Content/plugins/colorbox/jquery.colorbox.js"></script>
+    <!-- shuffle -->
+    <script src="~/Content/plugins/shuffle/shuffle.min.js" defer></script>
+
+
+    <!-- Google Map API Key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+    <!-- Google Map Plugin-->
+    <script src="~/Content/plugins/google-map/map.js" defer></script>
+
+    <!-- Template custom -->
+    <script src="~/Content/script.js"></script>
+
+
+    </div><!-- Body inner end -->
+</body>
+
+</html>
+
+</html>

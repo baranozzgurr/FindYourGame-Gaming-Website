@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @section Scripts
+{
+
+    }
+    <link href="@Url.Content("~/Content/style.css") rel="stylesheet" type="text/css" />
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>FindYourGame</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="FindYourGame">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/89/ed/5f/89ed5f5193647c81f54c0007d856d97d.jpg">
+
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/Content/plugins/bootstrap/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="~/Content/plugins/fontawesome/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="~/Content/plugins/animate-css/animate.css">
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href="~/Content/plugins/slick/slick.css">
+    <link rel="stylesheet" href="~/Content/plugins/slick/slick-theme.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="~/Content/plugins/colorbox/colorbox.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="~/Content/style.css">
+
+
+</head>
+<body>
+    <div class="body-inner">
+
+        <div id="top-bar" class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <ul class="top-info text-center text-md-left">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> <p class="info-text">3400 Istanbul</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ Top info end -->
+
+                    <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a title="Facebook" href="https://facebook.com">
+                                    <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                                </a>
+                                <a title="Twitter" href="https://twitter.com">
+                                    <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                                </a>
+                                <a title="Instagram" href="https://instagram.com">
+                                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ Top social end -->
+                </div>
+                <!--/ Content row end -->
+            </div>
+            <!--/ Container end -->
+        </div>
+        <!--/ Topbar end -->
+        <!-- Header start -->
+        <header id="header" class="header-one">
+            <div class="bg-white">
+                <div class="container">
+                    <div class="logo-area">
+                        <div class="row align-items-center">
+                            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                                <a class="d-block" href="@Url.Action("Index","Game")>
+                                    <img loading="lazy" src="https://cdn.dribbble.com/users/1787323/screenshots/12057610/media/8e7e8e869bf389fb727ac393c42e6b27.png?compress=1&resize=400x300" alt="FindYourGame">
+                                </a>
+                            </div><!-- logo end -->
+
+                            <div class="col-lg-9 header-right">
+                                <ul class="top-info-box">
+                                    <li>
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">FindYourGame</p>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-box">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">Email Us</p>
+                                                <p class="info-box-subtitle">Contact@FindYourGame.com</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="info-box last">
+                                            <div class="info-box-content">
+                                                <p class="info-box-title">Follow Us</p>
+                                                <a title="Instagram" href="https://instagram.com">
+                                                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-get-a-quote">
+                                        <a class="btn btn-primary" href="contact.html">Random Game</a>
+                                    </li>
+                                </ul><!-- Ul end -->
+                            </div><!-- header right end -->
+                        </div><!-- logo area end -->
+
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div>
+
+            <div class="site-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div id="navbar-collapse" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav mr-auto">
+                                        <li class="nav-item dropdown active">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Games<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li class="active"><a href="@Url.Action("Action","Game")">Action</a></li>
+                                                <li class="active"><a href="@Url.Action("Fight","Game")">Fight</a></li>
+                                                <li class="active"><a href="@Url.Action("War","Game")">War</a></li>
+                                                
+                                                <li class="active"><a href="@Url.Action("Racing","Game")">Racing</a></li>
+                                                <li class="active"><a href="@Url.Action("Survival","Game")">Survival</a></li>
+                                                <li class="active"><a href="@Url.Action("Platform","Game")">Platform</a></li>
+                                                <li class="active"><a href="@Url.Action("Horror","Game")">Horror</a></li>
+                                                <li class="active"><a href="@Url.Action("Simulation","Game")">Simulation</a></li>
+                                                <li class="active"><a href="@Url.Action("Rpg","Game")">RPG</a></li>
+                                                <li class="active"><a href="@Url.Action("Sports","Game")">Sports</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FindYourGame<i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="@Url.Action("About","Game")">About Us</a></li>
+
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Search Games</a></li>
+
+                                                <li><a href="#">Comment on Games</a></li>
+                                                <li><a href="#">Buy Games</a></li>
+                                                <li><a href="#">Share Games</a></li>
+
+                                            </ul>
+                                        </li>
+
+
+
+
+
+                                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Contact","Game")">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--/ Col end -->
+                    </div>
+                    <!--/ Row end -->
+
+                    <div class="nav-search">
+                        <span id="search"><i class="fa fa-search"></i></span>
+                    </div><!-- Search end -->
+
+                    <div class="search-block" style="display: none;">
+                        <label for="search-field" class="w-100 mb-0">
+                            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+                        </label>
+                        <span class="search-close">&times;</span>
+                    </div><!-- Site search end -->
+                </div>
+                <!--/ Container end -->
+
+            </div>
+            <!--/ Navigation end -->
+        </header>
+        <!--/ Header end -->
+
+        <section id="main-container" class="main-container">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3 class="border-title border-left mar-t0">Simulation Games</h3>
+
+                        <div class="accordion accordion-group accordion-classic" id="construction-accordion">
+                            <div class="card">
+                                <div class="card-header p-0 bg-transparent" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                            @ViewBag.games[1].Name
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#construction-accordion">
+                                    <div class="card-body">
+                                        <img loading="lazy" src="https://cdn1.epicgames.com/493e9ad801e8487497fe7840cb8404bb/offer/EGS-GIANTS-FS19-1360x766_Standard-1360x766-3ff704f0c5b6993465dbbeb797b181e9acf313e3.jpg?h=270&resize=1&w=480" alt="FindYourGame">
+                                        <br><b>Score: @ViewBag.games[1].Score</b></br>
+                                            <b>Year: @ViewBag.games[1].Year</b>
+                                        <br><b>Buy:</b><a href="https://store.steampowered.com/app/787860/Farming_Simulator_19/">PC</a></br>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-0 bg-transparent" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            @ViewBag.games[0].Name
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#construction-accordion">
+                                    <div class="card-body">
+                                        <img loading="lazy" src="https://cdn.akamai.steamstatic.com/steam/apps/239820/capsule_616x353.jpg?t=1622528952" alt="FindYourGame">
+                                        <br><b>Score: @ViewBag.games[0].Score</b></br>
+                                            <b>Year: @ViewBag.games[0].Year</b>
+                                        <br><b>Buy:</b><a href="https://store.steampowered.com/app/239820/Game_Dev_Tycoon/">PC</a></br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-0 bg-transparent" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            @ViewBag.games[2].Name
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                 data-parent="#construction-accordion">
+                                <div class="card-body">
+                                    <img loading="lazy" src="https://cdn.akamai.steamstatic.com/steam/apps/1222670/header.jpg?t=1623337270" alt="FindYourGame">
+                                    <br><b>Score @ViewBag.games[2].Score:</b></br>
+                                        <b>Year:@ViewBag.games[2].Year</b>
+                                    <br><b>Buy:</b><a href="https://store.steampowered.com/app/1222670/The_Sims_4/">PC</a> <a href="https://store.playstation.com/tr-tr/product/EP0006-CUSA09216_00-THESIMS400000000">PS</a> <a href="https://www.ea.com/games/the-sims/the-sims-4/buy/xbox">Xbox</a></br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--/ Accordion end -->
+
+
+
+            </div>
+    </div>
+    </div>
+
+
+    <section id="main-container" class="main-container">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="border-title border-left mar-t0">This Week's Promoted Simulation Games</h3>
+
+                    <div class="accordion accordion-group accordion-classic" id="construction-accordion">
+                        <div class="card">
+                            <div class="card-header p-0 bg-transparent" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="true" aria-controls="collapseFive">
+                                        @ViewBag.games[3].Name
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                                 data-parent="#construction-accordion">
+                                <div class="card-body">
+                                    <img loading="lazy" src="https://cdn1.epicgames.com/6009be9994c2409099588cde6f3a5ed0/offer/EGS_CitiesSkylines_ColossalOrder_S3-2560x1440-14df106873c918591e49bd9604841e83.jpg?h=270&resize=1&w=480" alt="FindYourGame">
+                                    <br><b>Score: @ViewBag.games[3].Score</b></br>
+                                        <b>Year: @ViewBag.games[3].Year</b>
+                                    <br><b>Buy:</b><a href="https://store.steampowered.com/app/255710/Cities_Skylines/">PC</a></br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header p-0 bg-transparent" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="true" aria-controls="collapseFive">
+                                        @ViewBag.games[4].Name
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                                 data-parent="#construction-accordion">
+                                <div class="card-body">
+                                    <img loading="lazy" src="https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg?t=1624257880" alt="FindYourGame">
+                                    <br><b>Score: @ViewBag.games[4].Score</b></br>
+                                        <b>Year: @ViewBag.games[4].Name</b>
+                                    <br><b>Buy:</b><a href="https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/">PC</a></br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="column-title" style="Color:red">
+                                    <br>Make A comment
+                                </h3></br>
+
+                                <form id="contact-form" action="#" method="post" role="form">
+                                    <div class="error-container"></div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Game</label>
+                                                <input class="form-control form-control-name" name="Game" id="Game" placeholder="" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input class="form-control form-control-email" name="Name" id="Name" placeholder="" type="text"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Title</label>
+                                                <input class="form-control form-control-subject" name="Title" id="Title" placeholder="" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Comment</label>
+                                        <textarea class="form-control form-control-message" name="comment" id="Comment" placeholder="" rows="10"
+                                                  required></textarea>
+                                    </div>
+                                    <div class="text-right">
+                                        <br>
+                                        <button onclick="location.href=" @Url.Action("Comment", "Game")" type="button">Make Comment</button>
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+                            <!-- Javascript Files
+                                                           ================================================== -->
+                            <!-- initialize jQuery Library -->
+                            <script src="~/Content/plugins/jQuery/jquery.min.js"></script>
+                            <!-- Bootstrap jQuery -->
+                            <script src="~/Content/plugins/bootstrap/bootstrap.min.js" defer></script>
+                            <!-- Slick Carousel -->
+                            <script src="~/Content/plugins/slick/slick.min.js"></script>
+                            <script src="~/Content/plugins/slick/slick-animation.min.js"></script>
+                            <!-- Color box -->
+                            <script src="~/Content/plugins/colorbox/jquery.colorbox.js"></script>
+                            <!-- shuffle -->
+                            <script src="~/Content/plugins/shuffle/shuffle.min.js" defer></script>
+
+
+                            <!-- Google Map API Key-->
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+                            <!-- Google Map Plugin-->
+                            <script src="~/Content/plugins/google-map/map.js" defer></script>
+
+                            <!-- Template custom -->
+                            <script src="~/Content/script.js"></script>
+
+
+                        </div><!-- Body inner end -->
+</body>
+
+</html>
