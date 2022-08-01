@@ -1,6 +1,4 @@
 # FindYourGame-Gaming-Website
-This Project was made for Database Systems Course
-
 FindYourGame is a Interactive Gaming website that aims to bring all gamers into together.Users can have information about the games they want according to the their filters, 
 connect to the marketplaces where they can buy the games, and also they can rate the games.
 In addition, with the comment system , people will be able to 
